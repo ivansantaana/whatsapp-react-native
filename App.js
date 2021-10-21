@@ -1,5 +1,6 @@
 import React,{ Component } from "react";
 import { StyleSheet, Text, View } from "react-native";
+import Icon from "react-native-vector-icons/MaterialIcons";
 
 export default class App extends Component{
   render() {
@@ -10,7 +11,8 @@ export default class App extends Component{
           <Text style={styles.logo}>WhatsApp</Text>
         </View>
         <View style={styles.rightHeaderContainer}>
-
+          <Icon name="search" color="#fff" size={23} style={styles.icon} />
+          <Icon name="more-vert" color="#fff" size={23} style={styles.icon} />
         </View>
       </View>
       <View style={styles.contentContainer}>
