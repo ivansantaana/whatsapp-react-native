@@ -4,9 +4,19 @@ import { StyleSheet, Text, View } from "react-native";
 export default class App extends Component{
   render() {
     return(
-      <View style={StyleSheet.mainContainer}>
-        
+      <View style={styles.mainContainer}>
+        <View style={styles.headerContainer}>
+          <View styles={styles.leftHeaderContainer}>
+          <Text style={styles.logo}>WhatsApp</Text>
+        </View>
+        <View style={styles.rightHeaderContainer}>
+
+        </View>
       </View>
+      <View style={styles.contentContainer}>
+
+      </View>
+    </View>
     )
   }
 }
