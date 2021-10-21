@@ -17,7 +17,7 @@ export default class App extends Component{
         </View>
       </View>
       <View style={styles.contentContainer}>
-
+ 
       </View>
     </View>
     )
