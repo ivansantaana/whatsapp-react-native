@@ -2,7 +2,10 @@ import React, {Component} from "react";
 import {View, Text, FlatList, ActivityIndicator} from "react-native";
 import axios from "axios";
 import { FAKE_CHATS } from "../data/data";
+<<<<<<< HEAD
 import { StyleSheet } from "react-native";
+=======
+>>>>>>> 364731b45636c2cdef81653ae660cc99e787db94
 
 export default class Chat extends Component {   
     constructor(props) {
@@ -24,6 +27,7 @@ export default class Chat extends Component {
            console.log(error);
        });
     }
+<<<<<<< HEAD
     render() {
         if(this.state.loaded) {
             return (
@@ -46,6 +50,22 @@ export default class Chat extends Component {
         return (
 
         );
+=======
+    render() {
+        if(this.state.loaded) {
+            return (
+                <FlatList
+                    data={this.state.chatList}
+                    renderItem={({item}) => <Text>{item.first_name}</Text>}
+                    keyExtractor={item => item.id}
+                />
+            )
+        } else {
+            return(
+                <ActivityIndicator size="large" />
+            )
+        }
+>>>>>>> 364731b45636c2cdef81653ae660cc99e787db94
     }
 }*/
 
