@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {View, Text, Image, StyleSheet} from "react-native";
 
-export default class ListChat extends Component {
+export default class ListState extends Component {
     render() {
         return (
             <View style = {styles.listItemContainer}>
@@ -11,26 +11,22 @@ export default class ListChat extends Component {
                         source={{uri: this.props.image}}
                     />
                 </View>
-                <View style = {styles.chatDetailsContainer}>
-                    <View style={styles.chatDetailsContainerWrap}>
+                <View style = {styles.callDetailsContainer}>
+                    <View style={styles.callDetailsContainerWrap}>
                         <View style={styles.nameContainer}>
                             <Text style={styles.nameText}>{this.props.first_name}</Text>
                         </View>
-                        <View style={styles.dateContainer}>
-                            <Text style={styles.dateText}>{this.props.date} {this.props.time}</Text>
-                        </View>
                     </View>
-                    <View style={styles.chatDetailsContainerWrap}>
-                        <View style={styles.msgContainer}>
-                            <Text style={styles.msgText}>{this.props.message}</Text>
-                        </View>
+                <View style={styles.callDetailsContainerWrap}>
+                    <View style={styles.date_timeContainer}>
+                        <Text>{this.props.date} {this.props.time}</Text>
                     </View>
+                </View>
                 </View>
             </View>
         );
     }
 }
-
 
 const styles = StyleSheet.create({
     listItemContainer: {
@@ -42,12 +38,12 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: "flex-start"
     },
-    chatDetailsContainer: {
+    callDetailsContainer: {
         flex: 4,
         borderBottomColor: "rgba(92,94,94,0.5)",
         borderBottomWidth: 0.25
     },
-    chatDetailsContainerWrap: {
+    callDetailsContainerWrap: {
         flex: 1,
         flexDirection: "row",
         padding: 5
@@ -61,7 +57,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems:"flex-end"
     },
-    msgContainer: {
+    date_timeContainer: {
         flex: 1
     },
     nameText: {
@@ -75,5 +71,14 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         width: 60,
         height: 60
+    },
+    video_callContainer: {
+        flex: 1,
+        alignItems: "flex-end"
+    },
+    video_call: {
+        borderRadius: 30,
+        width: 30,
+        height: 30
     }
 });

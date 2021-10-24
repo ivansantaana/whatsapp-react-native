@@ -32,10 +32,11 @@ export default class Call extends Component {
                     renderItem={({item}) => (
                         <ListCall
                             first_name={item.first_name}
-                            mobile={item.mobile}
+                            missed={item.missed}
                             date={item.date}
                             time={item.time}
                             image={item.image}
+                            video_call={item.video_call}
                         />
                     )}
                     keyExtractor={item => item.id}
