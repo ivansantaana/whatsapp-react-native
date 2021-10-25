@@ -42,8 +42,8 @@ export default class State extends Component {
                         </View>
                     </View>
                 <View style={styles.stateDetailsContainerWrap}>
-                    <View style={styles.date_timeContainer}>
-                        <Text style = {styles.date_timeContainer}>{"añade una actualización"}</Text>
+                    <View style={styles.add_stateContainer}>
+                        <Text style = {styles.add_stateContainer}>{"añade una actualización"}</Text>
                     </View>
                 </View>
                 </View>
@@ -78,7 +78,6 @@ export default class State extends Component {
 
 const styles = StyleSheet.create({
     listItemContainer: {
-        flex: 1,
         flexDirection: "row",
         padding:10
     },
@@ -105,8 +104,8 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         alignItems:"flex-end"
     },
-    date_timeContainer: {
-        flex: 1
+    add_stateContainer: {
+        flex: 1,
     },
     nameText: {
         fontWeight: "bold",
