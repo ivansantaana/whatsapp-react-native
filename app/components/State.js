@@ -48,9 +48,9 @@ export default class State extends Component {
                 </View>
                 </View>
             </View>
-            <View style ={styles.grey}>
+            <View style ={styles.grey_block}>
                 <View style = {styles.nameContainer}>
-                    <Text style = {styles.recientes}>{"Recientes"}</Text>
+                    <Text style = {styles.recientes}>{"  Recientes"}</Text>
                 </View>
             </View>
             
@@ -129,15 +129,13 @@ const styles = StyleSheet.create({
         width: 30,
         height: 30
     },
-    grey:{
-        flex: 1,
+    grey_block:{
         flexDirection: "row",
-        padding: 5,
-        height: 10,
-        backgroundColor: "#FFFFFF"
+        backgroundColor: "#FFFFFF",
+        padding: 10,
     },
     recientes: {
         fontWeight: "bold",
-        color: "#008F39"
+        color: "#008F39",
     }
 });
