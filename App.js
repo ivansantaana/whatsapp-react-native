@@ -1,10 +1,11 @@
 import React,{ Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import ScrollableTabView from "react-native-scrollable-tab-view";
 import Chats from "./app/components/Chat";
 import States from "./app/components/State";
 import Calls from "./app/components/Call";
+import Buttons from "./app/components/Button";
 
 export default class App extends Component{
   render() {
@@ -32,6 +33,7 @@ export default class App extends Component{
         <Calls tabLabel="LLAMADAS" />
       </ScrollableTabView>
       </View>
+      <Buttons></Buttons>
     </View>
     )
   }

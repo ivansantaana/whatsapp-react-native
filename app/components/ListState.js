@@ -1,6 +1,14 @@
 import React, {Component} from "react";
 import {View, Text, Image, StyleSheet} from "react-native";
-
+/*
+export class MyState{
+    render(){
+        return(){
+            
+        }
+    }
+}
+*/
 export default class ListState extends Component {
     render() {
         return (
